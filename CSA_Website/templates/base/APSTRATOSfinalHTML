@@ -36,7 +36,7 @@
     </ul>
   </div>
   <div class="column middle">
-    <span id='map-header'>MAP and IMAGE</span>
+    <span id='map-header'>MAP and IMAGES</span>
     <span id='map'></span>
     <span id='image1'></span>
     <span id = 'image2'></span>
