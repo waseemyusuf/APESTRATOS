@@ -3,11 +3,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title> </title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <!-- Leaflet CSS CDN-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  <!-- Our CSS -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <title>APESTRATOS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<p>JAFJASNFJLANFLANLFNASLFNALFJNAFnaljfnla</p>
-<img src="{% static 'images/hor images/488.jpg' %}">
+
+<div style="position: absolute; margin: 20px">
+    <button>Switch to French</button>
+</div>
+
+<div class="header">
+  <img src="https://casi.ca/resources/Pictures/Corporate%20Logos/CSA.png" class='logo'>
+</div>
+
+<div class="header">
+  <h2>APESTRATOS</h2>
+</div>
+
+<div class="header">
+  <h4>Applying Precise Engineering to STRATOS</h4>
+</div>
+
+<div class="header">
+  <h3>TIMMONS 2018</h3>
+</div>
+
+<div class="row">
+  <div class="column side">
+    TELEMETRY <br> DATA
+    <ul class = 'data-list'>
+      <li>Altitude: <br><span id="alt">296</span>m</li>
+      <li>Latitude: <br> <span id="lat">48.5704</span></li>
+      <li>Longitude: <br> <span id="lng">-81.3694</span></li>
+      <li>Sun Azimuth: <br> <span id="azm">320.23</span>°</li>
+      <li>Sun Elevation: <br> <span id="ele">-22.63</span>°</li>
+    </ul>
+  </div>
+  <div class="column middle">
+    <div id='map-header'>MAP and IMAGE</div>
+    <div id='map-and-slider'>
+        <div id="map" style="height: 430px"></div>
+        <div id="slider-div">
+            <input id="slider" style="width: 80%;" type="range" name="time" value="0" min="0" step="1" max="1296"><br>
+            <code>
+                <span id="duration" style="font-size: 1em">
+                    00h 00m 00s
+                </span>
+            </code>
+        </div>
+    </div>
+    <div id='image1'>
+        <img style="max-width: 100%; max-height:100%;" src="{% static 'images/hor images/488.jpg' %}">
+    </div>
+    <div id='image2'>
+        <img style="max-width: 100%; max-height:100%;" src="{% static 'images/nadir images/103L.jpg' %}">
+    </div>
+  </div>
+
+  <div class="column side">
+    ENVIRONMENT <br> DATA
+    <ul class = 'data-list'>
+      <li>Temperature: <br><span id="temp">18.69</span> °C</li>
+      <li>Pressure: <br> <span id="press">979.52</span> hPa</li>
+      <li>Humidity: <br> <span id="hum">0.9</span>%</li>
+      <li>Dew Point: <br> <span id="dew">-40.09</span>°C</li>
+      <li>Time: <br> <span id="time-utc">03:00:00</span> UTC</li>
+    </ul>
+  </div>
+</div>
+
+  <div id="textbox">
+    <p class="aligncenter">Canadian Space Agency &copy; 2019</p>
+  </div>
+
+  <!-- Leaflet CDN -->
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin="">
+  </script>
+  <!-- data -->
+  <script type="text/javascript" src="{% static 'data/matrix.txt' %}"></script>
+  <script type="text/javascript" src="{% static 'data/nadir.txt' %}"></script>
+  <script type="text/javascript" src="{% static 'data/hor.txt' %}"></script>
+  <!-- Our JS code -->
+  <script type="text/javascript" src="{% static 'js/map.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/updates.js' %}"></script>
 </body>
 </html>

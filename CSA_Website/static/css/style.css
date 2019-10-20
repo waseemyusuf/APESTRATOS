@@ -36,8 +36,8 @@ h4 {
   background-color: #011423;
   margin-bottom: 0px;
   text-align: center;
-  font-size: 35px; 
-  padding: 1px;  
+  font-size: 35px;
+  padding: 1px;
 }
 
 .row {
@@ -51,7 +51,7 @@ h4 {
   float: left;
   font-size: 30px;
   padding: 1%;
-  height: 500px; 
+  height: 500px;
 }
 
 /* Left and right column */
@@ -59,7 +59,7 @@ h4 {
   width: 15%;
   background-color: #071e3d;
   font-size: 1.2vw;
-  height: 600px; 
+  height: 600px;
 }
 
 .column-head {
@@ -99,7 +99,7 @@ li {
   padding-left: 50%;
 }
 
-#map {
+#map-and-slider {
   background-color: black;
   grid-column-start: 1;
   grid-column-end: 1;
