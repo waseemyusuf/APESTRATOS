@@ -36,8 +36,8 @@ h4 {
   background-color: #011423;
   margin-bottom: 0px;
   text-align: center;
-  font-size: 35px;
-  padding: 1px;
+  font-size: 35px; 
+  padding: 1px;  
 }
 
 .row {
@@ -51,7 +51,7 @@ h4 {
   float: left;
   font-size: 30px;
   padding: 1%;
-  height: 500px;
+  height: 500px; 
 }
 
 /* Left and right column */
@@ -59,7 +59,7 @@ h4 {
   width: 15%;
   background-color: #071e3d;
   font-size: 1.2vw;
-  height: 600px;
+  height: 600px; 
 }
 
 .column-head {
@@ -99,7 +99,7 @@ li {
   padding-left: 50%;
 }
 
-#map-and-slider {
+#map {
   background-color: black;
   grid-column-start: 1;
   grid-column-end: 1;
@@ -109,8 +109,7 @@ li {
 }
 
 #image1 {
-  font-size: 1em;
-  background-color: transparent;
+  background-color: white;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -119,8 +118,7 @@ li {
 }
 
 #image2 {
-  font-size: 1em;
-  background-color: transparent;
+  background-color: gray;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -159,16 +157,4 @@ li {
   .column.side, .column.middle {
     width: 100%;
   }
-}
-
-.lang {
-
-  background-color: #023055;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1em;
 }

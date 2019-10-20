@@ -20,5 +20,6 @@ from CSA_Website import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name = "home")
+    path('', views.home, name = "home"),
+    path('french/', views.home_fr, name = "homefrench")
 ]
