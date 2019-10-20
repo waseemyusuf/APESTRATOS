@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: white;
+}
+
+h2 {
+  color: #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 200%;
+  text-align: center;
+  }
+
+h3 {
+  color: #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 150%;
+  text-align: center;
+  }
+
+h4 {
+  color: #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 3px;
+  font-size: 70%;
+  text-align: center;
+  }
+
+/* Style the header */
+.header {
+  background-color: #011423;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 35px; 
+  padding: 1px;  
+}
+
+.row {
+  border-top: 10px solid white;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  text-align:center;
+  color: white;
+  float: left;
+  font-size: 30px;
+  padding: 1%;
+  height: 500px; 
+}
+
+/* Left and right column */
+.column.side {
+  width: 15%;
+  background-color: #071e3d;
+  font-size: 1.2vw;
+  height: 600px; 
+}
+
+.column-head {
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.data-list {
+  padding-top: .5vw;
+  list-style: none;
+  padding-left: 0px;
+  text-align: left;
+}
+
+li {
+  padding-bottom: 20%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 70%;
+  height: 600px;
+  padding-top: 1.5%;
+  background-color: #24293B;
+  border-right: 10px solid white;
+  border-left: 10px solid white;
+  display: inline-grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 6% 47% 47%;
+}
+
+#map-header {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding-left: 50%;
+}
+
+#map {
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  border: #24293B solid 14px;
+}
+
+#image1 {
+  background-color: white;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: #24293B solid 14px;
+}
+
+#image2 {
+  background-color: gray;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  border: #24293B solid 14px;
+}
+
+.logo {
+  height: 10vw;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.aligncenter {
+  float: left;
+  width:100%;
+  text-align:center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
